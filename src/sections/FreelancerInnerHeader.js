@@ -1,6 +1,7 @@
 import React from "react"
 import img2 from "../img/gb.svg"
 import {FreelancerData} from "../data/freelancer/FreelancerData";
+import { Link } from "react-router-dom";
 
 const FreelancerInnerHeader =({name, designation, location, hourlyRate,verified,rating, profile}) => {
   const portfolioData = [
@@ -33,12 +34,12 @@ const FreelancerInnerHeader =({name, designation, location, hourlyRate,verified,
 					
 					<div className="col-md-8">
 						<div className="left-side-container">
-							<div className="freelance-image"><a href="company-detail.html"><img src={data[0].profile} className="img-responsive img-circle" alt="" /></a></div>
+							<div className="freelance-image"><Link href="company-detail.html"><img src={data[0].profile} className="img-responsive img-circle" alt="" /></Link></div>
 							<div className="header-details">
 								<h4>{data[0].name}<span className="pull-right">{data[0].hourlyRate}</span></h4>
 								<p>{data[0].designation}</p>
 								<ul>
-									<li><a href="#"><i className="fa fa-building"></i> {data[0].place}</a></li>
+									<li><Link href="#"><i className="fa fa-building"></i> {data[0].place}</Link></li>
 									<li>
 										<div className="star-rating" data-rating={data[0].rating}>
 											<span className="fa fa-star fill"></span>
@@ -66,7 +67,7 @@ const FreelancerInnerHeader =({name, designation, location, hourlyRate,verified,
 							<ul className="social-info">
                 {portfolioData.map(val => {
                   const {link,icon} = val;
-                  return  <li key={icon}><a href={link}><i className={icon}></i></a></li>
+                  return  <li key={icon}><Link href={link}><i className={icon}></i></Link></li>
                 })}
 							</ul>
 						</div>

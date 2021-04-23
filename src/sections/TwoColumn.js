@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 // import TwoColumnCard from  '../components/TwoColumnCard'
 // import {TwoColumnData} from '../data/details'
 
@@ -13,7 +14,7 @@ const CallToAction = () => {
 						<div className="call-to-act-caption">
 							<h2>We Are Expert In Web design and development</h2>
 							<h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</h3>
-							<a href="#" className="btn bat-call-to-act">Hire Us</a>
+							<Link href="#" className="btn bat-call-to-act">Hire Us</Link>
 						</div>
 					</div>
 					
@@ -21,7 +22,7 @@ const CallToAction = () => {
 						<div className="call-to-act-caption">
 							<h2>We Are Expert In Web design and development</h2>
 							<h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</h3>
-							<a href="#" className="btn bat-call-to-act">Join Us</a>
+							<Link href="#" className="btn bat-call-to-act">Join Us</Link>
 						</div>
 					</div>
 					
