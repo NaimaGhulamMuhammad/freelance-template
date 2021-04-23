@@ -3,3 +3,46 @@
     border-radius: 0;
     box-shadow: none;
 }
+
+.scroll-bg{
+    background: white;
+    width: 100%;
+    margin: 10% auto;
+}
+
+.scroll-div{
+    width: 100%;
+    background: white;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+   
+}
+.heading{
+    text-align: center;
+}
+.scroll-object{
+    color: black;
+    /* font-family: cursive; */
+    font-size:15px ;
+}
+.para{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 30px;
+}
+
+ .btn{
+  
+    margin-left: 10px;
+   width: 160px;
+} 
+
+ 
+.btn-div{
+    text-align: center;
+    margin-top: 30px;
+    
+}
